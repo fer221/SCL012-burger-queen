@@ -16,17 +16,20 @@ const Formulario = (props) => {
     }
 
     const enviarDatos = (event) => {
+    
+    
         event.preventDefault()
         console.log('enviando datos...' + datos.nombre + ' ' + datos.password)
     }
-
+    
     return (
+
         <Fragment>
             <ul>
                 <h1>Bienvenido... {datos.nombre} <br></br>a Burger Queen</h1>
 
             </ul>
-            <headers className="flex-column">
+            <header className="flex-column">
             <form className="row" onSubmit={enviarDatos}>
                 <div className="col-md-3">
                     <input type="name" placeholder="Nombre" className="form-control" onChange={handleInputChange} name="nombre"></input>
@@ -37,7 +40,7 @@ const Formulario = (props) => {
 
                 <button type="submit" onClick={props.addTrip} className="btn btn-primary">Enviar</button>
             </form>
-            </headers>
+            </header>
         </Fragment>
     );
 }
