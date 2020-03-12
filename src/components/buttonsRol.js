@@ -2,6 +2,7 @@ import React, { Fragment, Component } from 'react';
 import ButtonGene from './buttonGene';
 import Waiters from './waiters';
 import Dialog from './dialog';
+import '../assets/css/formulario.css';
 
 class ButtonsRol extends Component {
     constructor(props) {
@@ -38,11 +39,11 @@ class ButtonsRol extends Component {
 
         return (
             <Fragment>
-                {this.state.isEmptyState && <ButtonGene title='Mesero' onClick={this.changeAddTripState} />}
+                {this.state.isEmptyState && <ButtonGene title='Mesero' className="btne"onClick={this.changeAddTripState} />}
 
                 {this.state.isChangeState && <Waiters />}{' '}
 
-                {this.state.isEmptyStateCook && <ButtonGene title='cocina' onClick={this.changeAtCookState} />}
+                {this.state.isEmptyStateCook && <ButtonGene title='cocina' className="btnc" onClick={this.changeAtCookState} />}
 
                 {this.state.isChangeStateCook && <Dialog title = "sirve"/>}
 
@@ -52,5 +53,5 @@ class ButtonsRol extends Component {
     }
 }
 
-export default ButtonsRol
+export default ButtonsRol;
 

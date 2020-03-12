@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
-import '../assets/css/App.css';
+
+import '../assets/css/formulario.css';
 
 
 const Formulario = (props) => {
@@ -25,7 +26,7 @@ const Formulario = (props) => {
     return (
 
         <Fragment>        
-            <headers className="flex-column">
+            <headers className="flex-column"class="title">
                 <h1>Bienvenido {datos.nombre} <br></br>a Burger Queen</h1>
 
             <form className="row" onSubmit={enviarDatos}>
@@ -36,7 +37,7 @@ const Formulario = (props) => {
                     <input type="password" placeholder="Password" className="form-control" onChange={handleInputChange} name="password"></input>
                 </div>
 
-                <button type="submit" onClick={props.addTrip} className="btn-primary">Enviar</button>
+                <button type="submit" onClick={props.addTrip} className="btnm">Ingresar</button>
             </form>
             </headers>
 

@@ -28,7 +28,7 @@ const Waiters = props => {
     <Col sm={9}>
       <TabContent>
         <TabPane eventKey="first">
-          <Breackfast claasname= "hello"/>
+          <Breackfast claasName= "card"/>
         </TabPane>
         <TabPane eventKey="second">
           <LunchMenu />
