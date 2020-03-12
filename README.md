@@ -14,6 +14,8 @@ La plataforma está dedicada para el uso del personal de un restaurante, mesero 
 El mesero quiere iniciar sesión para realizar una comanda que incluye: el nombre del cliente, los productos, los precios y el total.
 #### Definición de hecho
 Para iniciar sesión, el mesero ingresa sus datos de autentificación recibidos. Después puede ver el menu que tiene dos categorías: desayuno y almuerzo y los productos de cada categoría. Para realizar un pedido ingresa el nombre del cliente, hace click en los productos solicitados y en la parte derecha puede ver el listado. Al final del listado se encuentra el total y el boton "Cocina". El pedido se envia a la cocina.
+#### Flujo 
+![Mockup Burger Queen](/src/assets/images/Flujo-de-comandas.jpg)
 #### Prototipo de alta fidelidad
 Se realizó un prototipo de alta fidelidad usando Figma. Se puede visualizar al link [Prototipo Burger Queen](https://www.figma.com/file/P3RQ4l7JpuSVKRJbeyt7iN/Burguer-Queen)
 #### Mockup
