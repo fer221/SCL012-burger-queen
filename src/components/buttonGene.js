@@ -16,6 +16,7 @@ const ButtonGene = ({title, onClick}) => {
 Button.propTypes = {
     title: PropTypes.string,
     onClick: PropTypes.func
+
 }
 
 export default ButtonGene;

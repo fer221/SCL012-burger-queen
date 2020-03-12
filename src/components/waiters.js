@@ -3,7 +3,11 @@ import{Nav, Col, Row}  from 'react-bootstrap'
 import TabContainer from 'react-bootstrap/TabContainer'
 import TabContent from 'react-bootstrap/TabContent'
 import TabPane from 'react-bootstrap/TabPane'
-import Dialog from './dialog'
+//import '../App.css';
+//import Dialog from './dialog'
+import LunchMenu from './base'
+import Breackfast from './breakfast'
+
 
 
 const Waiters = props => {
@@ -17,17 +21,17 @@ const Waiters = props => {
           <Nav.Link eventKey="first">Desayuno</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="second">Almuerzo/Cena</Nav.Link>
+          <Nav.Link eventKey="second" >Almuerzo/Cena</Nav.Link>
         </Nav.Item>
       </Nav>
     </Col>
     <Col sm={9}>
       <TabContent>
         <TabPane eventKey="first">
-          <Dialog title = "aca va template de  menu desayuno"/>
+          <Breackfast claasname= "hello"/>
         </TabPane>
         <TabPane eventKey="second">
-          <Dialog title = 'aca va template de menu almuerzo' />
+          <LunchMenu />
         </TabPane>
       </TabContent>
     </Col>

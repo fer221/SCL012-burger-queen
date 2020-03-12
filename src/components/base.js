@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import db from './confg/firebase';
+//import './assets/css/App.css';
 
 
-class Breackfast extends Component {
+class LunchMenu extends Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -11,7 +12,7 @@ class Breackfast extends Component {
     }
     
     componentDidMount(){
-      db.collection('MenuDesayuno').get().then((querySnapshot) => {
+      db.collection('Menualmuerzo').get().then((querySnapshot) => {
         const data = querySnapshot.docs.map(doc => doc.data());
         this.setState({
           menuA:data
@@ -27,12 +28,12 @@ class Breackfast extends Component {
           
           {this.state.menuA.map((item, key) =>{
               return (
-                  <div>
+            <div>
                 <div key={key}>
-                <button><img alt="foto" src={item.img}></img><p>{item.Name}</p><p>{item.Precio} </p></button>
+                  <button><img alt="foto" src={item.img}></img><p>{item.Name}</p><p>{item.Precio} </p></button>
                  
                 </div>
-                </div>
+             </div>
               ) 
             })          
           }      
@@ -41,4 +42,4 @@ class Breackfast extends Component {
       }
     }
   
-export default Breackfast
+    export default LunchMenu;
