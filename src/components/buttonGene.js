@@ -3,11 +3,10 @@ import PropTypes from 'prop-types'
 import { Button } from 'react-bootstrap';
 
 
+
 const ButtonGene = ({title, onClick}) => {
     return (
-        <Button 
-            variant="warning"
-            onClick = {onClick}>
+        <Button variant="warning"onClick = {onClick}>
             {title}
         </Button>
     )
@@ -15,6 +14,7 @@ const ButtonGene = ({title, onClick}) => {
 
 Button.propTypes = {
     title: PropTypes.string,
+  
     onClick: PropTypes.func
 
 }

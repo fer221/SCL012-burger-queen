@@ -12,7 +12,7 @@ export default class Dialog extends Component {
     }
     
 
-render(){
+ render(){
     return (
        <Fragment>
 

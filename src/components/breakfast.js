@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import db from './confg/firebase';
-
+import "./centralWhite.css"
 
 class Breackfast extends Component {
     constructor(props) {
@@ -23,16 +23,20 @@ class Breackfast extends Component {
     }
     render(){
       return (      
-        <div className="App-header">
+        <div className="containerButtonsMenu">
           
           {this.state.menuA.map((item, key) =>{
               return (
-                  <div>
-                <div key={key}>
-                <button><img alt="foto" src={item.img}></img><p>{item.Name}</p><p>{item.Precio} </p></button>
-                 
+              
+                <div  clasName="itemsMenu" key={key}>
+              
+                  <button className="btn btnMenu">
+                    <img alt="foto" src={item.img}></img>
+                    <p>{item.Name}</p><p>{item.Precio}</p>
+                  </button>
+                  
                 </div>
-                </div>
+              
               ) 
             })          
           }      

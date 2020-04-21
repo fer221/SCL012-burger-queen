@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import db from './confg/firebase';
-//import './assets/css/App.css';
+import "./centralWhite.css"
+
 
 
 class LunchMenu extends Component {
@@ -24,16 +25,21 @@ class LunchMenu extends Component {
     }
     render(){
       return (      
-        <div className="App-header">
+        <div className="containerButtonsMenu">
           
           {this.state.menuA.map((item, key) =>{
               return (
-            <div>
+           
                 <div key={key}>
-                  <button><img alt="foto" src={item.img}></img><p>{item.Name}</p><p>{item.Precio} </p></button>
-                 
+           
+                  <button className="btn btnMenu">
+                    <img alt="foto" src={item.img}></img>
+                    <p>{item.Name}</p>
+                    <p>{item.Precio}</p>
+                  </button>
+               
                 </div>
-             </div>
+            
               ) 
             })          
           }      

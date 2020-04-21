@@ -1,4 +1,5 @@
 import React, { Fragment, Component } from 'react';
+import{Row}  from 'react-bootstrap'
 import ButtonGene from './buttonGene';
 import Waiters from './waiters';
 import Dialog from './dialog';
@@ -8,7 +9,8 @@ class ButtonsRol extends Component {
         super(props)
         this.state = {
             isEmptyState: true,
-            isEmptyStateCook: true
+            isEmptyStateCook: true,
+         
         }
        
     }
@@ -37,15 +39,20 @@ class ButtonsRol extends Component {
     render() {
 
         return (
+
             <Fragment>
+
+                <Row>
+
                 {this.state.isEmptyState && <ButtonGene title='Mesero' onClick={this.changeAddTripState} />}
 
-                {this.state.isChangeState && <Waiters />}{' '}
+                {this.state.isChangeState && <Waiters  />  }  {' '}
+               
+                {this.state.isEmptyStateCook && <ButtonGene title='cocina'  onClick={this.changeAtCookState} />}
 
-                {this.state.isEmptyStateCook && <ButtonGene title='cocina' onClick={this.changeAtCookState} />}
+                {this.state.isChangeStateCook && <Dialog title = "sirve"/>} {' '}
 
-                {this.state.isChangeStateCook && <Dialog title = "sirve"/>}
-
+                </Row>
             </Fragment>
         )
 

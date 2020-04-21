@@ -1,18 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #FFFFFF;
   min-height: 100vh;
@@ -23,20 +8,92 @@
   font-size: calc(10px + 2vmin);
   color: #B22222;
 }
-
+.App{
+  min-height: 100vh;
+  margin: 20px;
+}
 .App-link {
   color: #B22222;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .hello{
   background: #FFFFFF;
 
 }
+* {
+  list-style: none;
+}
+.btnMenu{
+border : black solid 1px;
+width: 150px;
+height: 150px;
+}
+
+
+/* Div total izquierdo */
+.takingOrder {
+  width: 70%;
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Div del nombre y mesa */
+.clientID {
+  width: 90%;
+  height: 5em;
+  display: flex;
+}
+
+.menuDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  min-height: 100vh;
+}
+
+/* Div del menú  */
+.menu {
+  width: 50%;
+  height: 30em;
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  box-sizing: content-box;
+}
+.itemsMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em 0.75em 0 0.75em ;
+  border-bottom: 2px solid;
+}
+img{width: 50%}
+/* Div del total de la cuenta */
+.total {
+  width: 20%;
+  height: 30em;
+  background-color: #2a2d34;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  border-radius: 10px;
+  justify-content: space-between;
+  padding-top: 1em;
+  
+}
+
+/* Div total derecho */
+.orderStatus {
+  width: 30%;
+  height: 20em;
+  background-color: #B22222;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  border-radius: 10px;
+}
+

@@ -1,0 +1,76 @@
+{
+  "Almuerzo" : {
+    "A" : {
+      "Img" : "../public/bocadillo.png",
+      "Name" : "Aros de Cebolla",
+      "Valor" : "$500"
+    },
+    "AGG" : {
+      "Img" : "../public/agua.png",
+      "Name" : "Agua 750 ML",
+      "Valor" : "$700"
+    },
+    "Ag" : {
+      "Img" : "../public/copia de soda 2.png",
+      "Name" : "Agua 500 ML",
+      "Valor " : "$500"
+    },
+    "BC" : {
+      "Img" : "../public/copia de soda.png",
+      "Name " : "Bebida 500ML",
+      "Valor" : "$700"
+    },
+    "BG" : {
+      "Img" : "../public/copia de soda.png",
+      "Name" : "Bebida 750ML",
+      "Valor " : "$1000"
+    },
+    "H" : {
+      "Img" : "../public/huevo-frito.png",
+      "Name" : "Huevo",
+      "Valor" : "$100"
+    },
+    "HD" : {
+      "Img" : "../public/copia de sandwich.png",
+      "Name" : "Hamburguesa Doble",
+      "Valor" : "$1500"
+    },
+    "HS" : {
+      "Img" : "../public/hamburguesa.png",
+      "Name " : "Hamburguesa Simple",
+      "Valor" : "$1000"
+    },
+    "P" : {
+      "Img" : "../public/patatas-fritas.png",
+      "Name" : "Papas Fritas",
+      "Valor" : "$500"
+    },
+    "Q" : {
+      "Img" : "../public/queso.png",
+      "Name" : "Queso",
+      "Valor" : "$100"
+    }
+  },
+  "Desayuno" : {
+    "C" : {
+      "Img" : "../public/taza de cafe.png",
+      "Name" : "Café Americano",
+      "Valor" : 500
+    },
+    "D" : {
+      "Img" : "../public/cafe (1).png",
+      "Name" : "Café con Leche",
+      "Valor" : "$700"
+    },
+    "J" : {
+      "Img" : "../public/batido.png",
+      "Name" : "Jugo Natural",
+      "Valor" : 1000
+    },
+    "s" : {
+      "Img" : "../public/sandwich.png",
+      "Name" : "Sandwich jamón queso",
+      "Valor" : 1000
+    }
+  }
+}
