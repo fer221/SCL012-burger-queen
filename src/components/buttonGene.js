@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 
 const ButtonGene = ({title, onClick}) => {
     return (
-        <Button variant="warning"onClick = {onClick}>
+        <Button variant="warning text-white" onClick = {onClick}>
             {title}
         </Button>
     )

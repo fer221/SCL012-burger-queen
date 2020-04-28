@@ -8,6 +8,7 @@ import ButtonsRol from './components/buttonsRol';
 import Formulario from './components/formulario';
 
 
+
 class App extends Component {
 
   constructor(props) {
@@ -21,19 +22,19 @@ class App extends Component {
       isEmptyState: false,
       isAddTripState: true
     })
+   
   }
 
 
   render() {
     return (
 
-      <div className="App">
-        <header className="App-header">
-            {this.state.isEmptyState && <Formulario addTrip={this.triggerAddTripState} />}
+      <div className="App-header">
+
+            {this.state.isEmptyState && <Formulario addTrip={this.triggerAddTripState}/>}
 
             {this.state.isAddTripState && <ButtonsRol />}
-        </header>
-     
+         
        
       </div>
 

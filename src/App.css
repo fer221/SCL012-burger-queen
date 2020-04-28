@@ -6,20 +6,17 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #B22222;
+  color: #FD7D00;
+ 
 }
 .App{
   min-height: 100vh;
-  margin: 20px;
+  margin: 40px;
 }
 .App-link {
   color: #B22222;
 }
 
-.hello{
-  background: #FFFFFF;
-
-}
 * {
   list-style: none;
 }
@@ -32,7 +29,7 @@ height: 150px;
 
 /* Div total izquierdo */
 .takingOrder {
-  width: 70%;
+  width: 50%;
   height: 768px;
   display: flex;
   flex-direction: column;
@@ -40,16 +37,15 @@ height: 150px;
 
 /* Div del nombre y mesa */
 .clientID {
-  width: 90%;
-  height: 5em;
+  width: 100%;
+  height: 3em;
   display: flex;
 }
 
 .menuDiv {
   display: flex;
   justify-content: space-between;
-  width: 60%;
-  min-height: 100vh;
+  width: 70%;
 }
 
 /* Div del menú  */

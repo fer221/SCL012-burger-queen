@@ -1,5 +1,5 @@
 # Burger Queen
-
+![logo](/src/assets/images/burgerQueen.png) 
 ## Definición del producto
 
 Burgen Queen es una plataforma diseñada para los restaurantes, que tiene como objetivo gestionar eficientemente el flujo de comandas.
