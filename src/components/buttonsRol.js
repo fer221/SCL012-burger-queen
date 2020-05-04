@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ButtonGene from './buttonGene';
 import Waiters from '../secctions/waiters';
 import Dialog from './dialog';
+import '../assets/css/formulario.css';
 
 class ButtonsRol extends Component {
     constructor(props) {
@@ -55,5 +56,4 @@ class ButtonsRol extends Component {
     }
 }
 
-export default ButtonsRol
-
+export default ButtonsRol;

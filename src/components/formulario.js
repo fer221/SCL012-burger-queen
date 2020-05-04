@@ -1,6 +1,7 @@
 import React, { Component} from "react";
 import '../assets/css/App.css';
 import logo from "../assets/images/burgerQueen.png";
+// import firebase from 'firebase';
 
 
 
